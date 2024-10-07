@@ -16,9 +16,9 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+        child: SingleChildScrollView(
           child: Column(
             children: [
               bgAndLabel(context),
@@ -32,17 +32,8 @@ class _BodyState extends State<Body> {
               Row(
                 children: [
                   Icon(Icons.star, color: Colors.yellow.shade600,),
-                  SizedBox(width: 6,),
                   Text(
                     '4.5',
-                    style: TextStyle(
-                      color: kSecondaryColor,
-                      fontSize: 12
-                    ),
-                  ),
-                  SizedBox(width: 6,),
-                  Text(
-                    '( 355 Viewers )',
                     style: TextStyle(
                       color: kSecondaryColor,
                       fontSize: 12
