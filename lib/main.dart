@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nifed/pages/detail/detail_screen.dart';
 import 'package:nifed/pages/home/home_screen.dart';
 import 'package:nifed/pages/splash/splash_screen.dart';
 
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: {
-        HomeScreen.routeName : (context) => HomeScreen()
+        HomeScreen.routeName : (context) => HomeScreen(),
+        DetailScreen.routeName : (context) => DetailScreen()
       },
     );
   }
