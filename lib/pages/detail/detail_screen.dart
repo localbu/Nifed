@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nifed/constant.dart';
 import 'package:nifed/pages/detail/components/body.dart';
 import 'package:nifed/pages/detail/custom_book_bottom_bar.dart';
 

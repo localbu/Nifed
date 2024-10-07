@@ -33,19 +33,21 @@ class _BodyState extends State<Body> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: SizedBox(
-          width: MediaQuery.sizeOf(context).width,
-          child: Column(
-            children: [
-              TittleHome(),
-              SizedBox(height: 20),
-              CustomSearchBar(),
-              HomeTabBar(tabController: _tabController),
-              SizedBox(height: 20,),
-              HomeContain(tabController: _tabController)
-            ],
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: SizedBox(
+            width: MediaQuery.sizeOf(context).width,
+            child: Column(
+              children: [
+                TittleHome(),
+                SizedBox(height: 20),
+                CustomSearchBar(),
+                HomeTabBar(tabController: _tabController),
+                SizedBox(height: 20,),
+                HomeContain(tabController: _tabController)
+              ],
+            ),
           ),
         ),
       ),
